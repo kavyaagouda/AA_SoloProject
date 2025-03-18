@@ -28,6 +28,8 @@ html, body {
     --color-white: #ffffff;
     --color-gray: #6c757d;
     --color-blue: #4361EE4D;
+    --color-darkblue: #3A0CA3;
+
     
     /* Font Sizes */
     --font-size-xs: 0.75rem;
@@ -310,7 +312,27 @@ nav {
     top: 6px;
     right: 20px;
 }
-
+.top-bar {
+    background-color: var(  --color-darkblue);
+    color: white;
+    padding: 12px 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-bar div {
+    display: flex;
+    align-items: center;
+}
+.top-bar img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.top-bar span {
+    margin-right: 20px;
+    font-size: 14px;
+}
 
 @media (max-width: 768px) {
     .menu {
@@ -328,5 +350,8 @@ nav {
     .mobile {
         display: flex;
         flex-direction: column;
+    }
+    .top-bar {
+        display: none;
     }
 }
