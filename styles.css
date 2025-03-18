@@ -515,8 +515,8 @@ nav {
 @media (max-width: 768px) {
     .footer .container {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        /* text-align: center; */
     }
 
     .footer-links, .footer-discovery, .footer-subscribe {
@@ -525,6 +525,18 @@ nav {
 
     .social-icons a {
         margin: 5px;
+    }
+    .footer-bottom a{
+        font-size: 12px;
+    }
+    .footer .container {
+    
+        gap: 0px;
+    }
+    .subscribe-box input[type="email"] {
+     
+        width: 280px;
+  
     }
 }
 
