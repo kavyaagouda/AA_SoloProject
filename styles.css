@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html, body {
@@ -12,6 +13,7 @@ html, body {
     background-color: #f9f9f9;
     color: #333;
 }
+
 
 /* Base Variables */
 :root {
@@ -111,4 +113,93 @@ html, body {
 
 .button:active {
     opacity: 0.8;
+}
+
+
+
+
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    background: #4361EE4D;
+    border-radius: 25px;
+    padding: 6px 10px;
+}
+
+.cta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.cta a, .cta button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta button {
+    background-color: #6b46c1;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+}
+
+.cta button:hover {
+    background-color: #4c3191;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
 }
