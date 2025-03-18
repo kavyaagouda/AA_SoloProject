@@ -28,6 +28,7 @@ html, body {
     --color-dark: #343a40;
     --color-white: #ffffff;
     --color-gray: #6c757d;
+    --color-blue: #4361EE4D
 
     /* Font Sizes */
     --font-size-xs: 0.75rem;
@@ -159,7 +160,7 @@ nav {
 }
 
 .menu a:hover {
-    background: #4361EE4D;
+    background:var(--color-blue);
     border-radius: 25px;
     padding: 6px 10px;
 }
