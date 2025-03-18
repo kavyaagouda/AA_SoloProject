@@ -1,0 +1,114 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Base Variables */
+:root {
+    /* Colors */
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --color-success: #28a745;
+    --color-danger: #dc3545;
+    --color-warning: #ffc107;
+    --color-info: #17a2b8;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+    --color-white: #ffffff;
+    --color-gray: #6c757d;
+
+    /* Font Sizes */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+
+    /* Font Weights */
+    --font-weight-thin: 100;
+    --font-weight-extralight: 300;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium:500;
+    --font-weight-semibold:600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black:900;
+
+    /* Breakpoints */
+    --breakpoint-xs: 480px;
+    --breakpoint-sm: 768px;
+    --breakpoint-md: 992px;
+    --breakpoint-lg: 1200px;
+}
+
+/* Button Variants */
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.button-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.button-success {
+    background-color: var(--color-success);
+    color: var(--color-white);
+}
+
+.button-danger {
+    background-color: var(--color-danger);
+    color: var(--color-white);
+}
+
+.button-warning {
+    background-color: var(--color-warning);
+    color: var(--color-dark);
+}
+
+.button-info {
+    background-color: var(--color-info);
+    color: var(--color-white);
+}
+
+.button-light {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.button-dark {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.button:active {
+    opacity: 0.8;
+}
