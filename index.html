@@ -88,7 +88,55 @@
             </nav>
         </div>
     </header>
-  
+    <section class="testimonial-section">
+        <div class="container ">
+          <div class="testimonial">
+            <div class="testimonial-header">
+                <h2>Testimonials</h2>
+                <h3>Look What Our Customers Say!</h3>
+                <p>Fusce venenatis tellus a felis scelerisque, non pulvinar est pellentesque.</p>
+                <div class="arrows">
+                     <img src="/assests/images/right_arrow.png" alt="Arrow">
+                    <img src="/assests/images/left_arrow.png" alt="Arrow">
+                </div>
+            </div>
+            <div class="carousel-container">
+                  <div class="testimonial-card active">
+                    <img src="/assests/images/quotes.png" alt="Quotation Mark" class="quote-icon">
+                    <p>I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the perfect home. We couldn't be happier with our new place!</p>
+                    <div class="profile">
+                        <img src="/assests/images/cilent.png" alt="Profile" class="profile-pic">
+                        <span class="profile-name">Barbara D. Smith</span>
+                        <img src="/assests/images/rating.png" alt="Rating" class="rating">
+                    </div>
+                    </div> 
+                 <div class="testimonial-card">
+                    <img src="/assests/images/quotes.png" alt="Quotation Mark" class="quote-icon">
+                    <p>I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the perfect home. We couldn't be happier with our new place!</p>
+                    <div class="profile">
+                        <img src="/assests/images/cilent.png" alt="Profile" class="profile-pic">
+                        <span class="profile-name">Sarah P. Smith</span>
+                        <img src="/assests/images/rating.png" alt="Rating" class="rating">
+                    </div>
+                    </div> 
+                  <div class="testimonial-card">
+                        <img src="/assests/images/quotes.png" alt="Quotation Mark" class="quote-icon">
+                        <p>I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the perfect home. We couldn't be happier with our new place!</p>
+                        <div class="profile">
+                            <img src="/assests/images/cilent.png" alt="Profile" class="profile-pic">
+                            <span class="profile-name">John Cavan  D. Bal</span>
+                            <img src="/assests/images/rating.png" alt="Rating" class="rating">
+                        </div>
+                        </div> 
+                <div class="indicator">
+                    <div class="dot active" onclick="showSlide(0)"></div>
+                    <div class="dot" onclick="showSlide(1)"></div>
+                    <div class="dot" onclick="showSlide(2)"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
     <section>
         <div class="container"> 
             <div class="banner">
@@ -170,20 +218,7 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.menu');
-            const crossIcon = document.querySelector('.cross-icon');
-            const lines = document.querySelectorAll('.menu-icon .line');
-    
-            menu.classList.toggle('active');
-            crossIcon.classList.toggle('visible');
-    
-            lines.forEach(line => {
-                line.classList.toggle('hidden');
-            });
-        }
-    </script>
+    <script src="script.js"> </script>
     
 </body>
 </html>
